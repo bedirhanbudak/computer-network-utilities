@@ -1,0 +1,7 @@
+Traceroute and Ping provide different results.
+
+Traceroute gives latency information for each hop. This allows us to analyze the entire path and the all hops to the host. Delays are increasing at distant hops. In the boxplot graph, some hops have wider boxes. This indicates more variation in latency.
+
+Ping, on the other hand, measures only the RTT to the host. Due to this, ping latency values are generally higher than the traceroute latencies. Additionally, ping uses ICMP echo packets and some websites may block these packets. So, the websites do not respond to ping requests.
+
+Overall, traceroute provides a detailed information of the network path and it is useful for identify where delays occur in network, while ping is more suitable for analyzing end-to-end path quickly.
